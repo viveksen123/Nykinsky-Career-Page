@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>responsive job portal website</title>
+    <style>
+        /* Style for the option elements */
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+
+<body>
+    <!-- navbar-->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="./">NykinSky&Company</a></h2>
+
+        <div class="navbar-menu">
+            <a href="./">Home</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+    <!--header-->
+    <header>
+        <h1 class="header-title">
+            FIND YOUR <BR> <Span>PERFECT JOB</Span><BR>EASILY
+        </h1>
+    </header>
+
+
+
+    <!-- filter box-->
+<!--    <div class="filter-box">-->
+<!--        <div class="filter-dropdown" style="padding-right: 5rem; ">-->
+<!--            <select class="filter-select" style="   margin-right: 90px; " id="LOCATION TYPE" name="LOCATION TYPE">-->
+<!--                <option>LOCATION TYPE</option>-->
+<!--                <option>On-site</option>-->
+<!--                <option>Hybrid</option>-->
+<!--                <option>Remote</option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="filter-dropdown">-->
+<!--            <select class="filter-select" id="LOCATION" name="LOCATION">-->
+<!--                <option>LOCATION</option>-->
+<!--                <option>Agartala,Tripura</option>-->
+<!--                <option>Agra,Uttar Pradesh</option>-->
+<!--                <option>Ahmedabad,Gujrat</option>-->
+<!--                <option>Ahmedabad,Indore,Chennai,Hyderabad</option>-->
+<!--                <option>Amritsar,Punjab</option>-->
+<!--                <option>Aurangabad,Maharashta</option>-->
+<!--                <option>Bengaluru,Karnataka</option>-->
+<!--                <option>Berhampur, Orissa</option>-->
+<!--                <option>Bhopal, Madhya Pradesh</option>-->
+<!--                <option>Bhubaneshwar, Orissa</option>-->
+<!--                <option>Burdwan, West Bengal</option>-->
+<!--                <option>Chandigarh, Punjab</option>-->
+<!--                <option>Chennai, Tamil Nadu</option>-->
+<!--                <option>Cochin, Kerala</option>-->
+<!--                <option>Coimbatore, Tamil Nadu</option>-->
+<!--                <option>Dehradun, Uttarakhand</option>-->
+<!--                <option>Delhi-NCR</option>-->
+<!--                <option>Dhanbad, Jharkhand</option>-->
+<!--                <option>Faridabad, Haryana</option>-->
+<!--                <option>Goa</option>-->
+<!--                <option>Gurugram, Haryana</option>-->
+<!--                <option>Guwahati, Assam</option>-->
+<!--                <option>Haldwani, Uttrakhand</option>-->
+<!--                <option>Hubli, Karnataka</option>-->
+<!--                <option>Hyderabad, Telangana</option>-->
+<!--                <option>Indore, Madhya Pradesh</option>-->
+<!--                <option>Jaipur, Rajasthan</option>-->
+<!--                <option>Jalandhar, Punjab</option>-->
+<!--                <option>Jammu, Jammu & Kashmir</option>-->
+<!--                <option>Jammu, Jammu & Kashmir</option>-->
+<!--                <option>Jodhpur, Rajasthan</option>-->
+<!--                <option>Kanchipuram, Tamil Nadu</option>-->
+<!--                <option>Kanpur, Uttar Pradesh</option>-->
+<!--                <option>Karnal, Haryana</option>-->
+<!--                <option>Kochi, Kerala</option>-->
+<!--                <option>Kolkata, West Bengal</option>-->
+<!--                <option></option>-->
+<!--                <option>Lucknow, Uttar Pradesh</option>-->
+<!--                <option>Ludhiana, Punjab</option>-->
+<!--                <option>Malda, West Bengal</option>-->
+<!--                <option>Mangalore, Karnataka</option>-->
+<!--                <option>Meerut, Uttar Pradesh</option>-->
+<!--                <option>Mohali, Punjab</option>-->
+<!--                <option>Mumbai, Maharashtra</option>-->
+<!--                <option>Mysore, Karnataka</option>-->
+<!--                <option>Nashik, Maharashtra</option>-->
+<!--                <option>Nizamabad, Telangana</option>-->
+<!--                <option>Noida, Uttar Pradesh</option>-->
+<!--                <option>Panipat, Haryana</option>-->
+<!--                <option>Patna, Bihar</option>-->
+<!--                <option>Pune, Maharashtra</option>-->
+<!--                <option>Punjab,Haryana</option>-->
+<!--                <option>Purba Medinipur, West Bengal</option>-->
+<!--                <option>Raipur, Chhattisgarh</option>-->
+<!--                <option>Rajahmundry, Andhra Pradesh</option>-->
+<!--                <option>Rajamundry, Andhra Pradesh</option>-->
+<!--                <option>Rajkot, Gujarat</option>-->
+<!--                <option>Ranchi, Jharkhand</option>-->
+<!--                <option>Rohtak, Haryana</option>-->
+<!--                <option>Rourkela, Orissa</option>-->
+<!--                <option>Sikar, Rajasthan</option>-->
+<!--                <option>Siliguri, West Bengal</option>-->
+<!--                <option>Surat, Gujarat</option>-->
+<!--                <option>Thrissur, Kerala</option>-->
+<!--                <option>Tirupati, Andhra Pradesh</option>-->
+<!--                <option>Toronto, Canada</option>-->
+<!--                <option>Vadodara, Gujarat</option>-->
+<!--                <option>Varanasi, Uttar Pradesh</option>-->
+<!--                <option>Vijayawada, Andhra Prades</option>-->
+<!--                <option>Visakhapatnam, Andhra Pradesh</option>-->
+<!--                <option>Warangal, Telangana</option>-->
+
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="filter-dropdown">-->
+<!--            <select class="filter-select" id="TEAM" name="TEAM">-->
+<!--                <option class="filter-option">TEAM</option>-->
+<!--                <option class="filter-option">Analytics</option>-->
+<!--                <option class="filter-option">EDC Retail</option>-->
+<!--                <option class="filter-option">Offline Merchants-QR</option>-->
+<!--                <option class="filter-option">Business</option>-->
+<!--                <option class="filter-option">CreditMate</option>-->
+<!--                <option class="filter-option">Enterprise Mid-Market</option>-->
+<!--                <option class="filter-option">Fastag</option>-->
+<!--                <option class="filter-option">Insurance</option>-->
+<!--                <option class="filter-option">Lending</option>-->
+<!--                <option class="filter-option">Lending Collection</option>-->
+<!--                <option class="filter-option">Offline Merchants-QR</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">Design</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">Enabling</option>-->
+<!--                <option class="filter-option">CEO's Office</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">Finance</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">Growth</option>-->
+<!--                <option class="filter-option">Consumer Growth</option>-->
+<!--                <option class="filter-option">Fastag</option>-->
+<!--                <option class="filter-option">Lending</option>-->
+<!--                <option class="filter-option">nykinsky First Games</option>-->
+<!--                <option class="filter-option">Transit</option>-->
+<!--                <option class="filter-option">HR</option>-->
+<!--                <option class="filter-option">Recruitment</option>-->
+<!--                <option class="filter-option">Legal,Risk & Compliance</option>-->
+<!--                <option class="filter-option">Internal Audit</option>-->
+<!--                <option class="filter-option">Marketing</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">Operations & Support</option>-->
+<!--                <option class="filter-option">Lending</option>-->
+<!--                <option class="filter-option">Offline Merchants-QR</option>-->
+<!--                <option class="filter-option">nykinsky Insider</option>-->
+<!--                <option class="filter-option">nykinsky Labs</option>-->
+<!--                <option class="filter-option">Labs-Engineering</option>-->
+<!--                <option class="filter-option">Product</option>-->
+<!--                <option class="filter-option">App Product</option>-->
+<!--                <option class="filter-option">Customer Service(CS)</option>-->
+<!--                <option class="filter-option">Insurance</option>-->
+<!--                <option class="filter-option">Lending</option>-->
+<!--                <option class="filter-option">Offline Merchants-QR</option>-->
+<!--                <option class="filter-option">PPBL</option>-->
+<!--                <option class="filter-option">Recharges & Utilities</option>-->
+<!--                <option class="filter-option">Risk</option>-->
+<!--                <option class="filter-option">Sales</option>-->
+<!--                <option class="filter-option">EDC Retail</option>-->
+<!--                <option class="filter-option">Offline Merchants-QR</option>-->
+<!--                <option class="filter-option">Oil & Gas/ Dairy</option>-->
+<!--                <option class="filter-option">nykinsky Ads</option>-->
+
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="filter-dropdown">-->
+<!--            <select class="filter-select" id="WORK TYPE" name="WORK TYPE">-->
+<!--                <option>WORK TYPE</option>-->
+<!--                <option>Contractual</option>-->
+<!--                <option>Intern</option>-->
+<!--                <option>On-roll</option>-->
+<!--                <option>QR-Sales</option>-->
+<!--                <option>Undercategorized</option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--job listing-->
+    <section class="job-list" id="jobs">
+       
+
+        {% for u_team in uteam %}
+        <h1 style="padding-bottom: 10px;">{{ u_team.title }}</h1>
+        
+        {% for team in data %}
+        {% if team.title == u_team.title %}
+        <div class="job-card">
+            <div class="job-name">
+                <div class="job-detail">
+                       <h3>{{team.job_name }}</h3>
+                    
+                    </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="team_detail?id={{team.id}}">APPLY</a>
+
+            </div>
+            
+        </div>
+
+        {% endif %}
+    
+        {% endfor %}
+        {% endfor %}
+    </section>
+    <!--blog-->
+    <section class="Blogs" id="Blogs">
+        <h1 class="section-title">Career Advices</h1>
+        <p> Learn more career tips from company's recruiter</p>
+        <div class="Blogs-wrapper">
+            <div class="Blogs-card">
+                <img class="Blogs-image" src="{% static './images/person-sofa-chair-meeting.jpg' %}">
+                <div class="Blogs-detail">
+                    <span>25 Dec 2023</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>With 10 years of experience in helping businesses grow, we’ve mastered the skills of
+                        understanding business requirements irrespective of the industry they serve.</p>
+                    <hr class="divider">
+                    <a href="#" class="Blogs-more">Read More</a>
+                </div>
+            </div>
+            <div class="Blogs-card">
+                <img class="Blogs-image" src="{% static './images/Interview-with-one-interviewer-and-two-interviewees-1536x1025.jpeg' %}">
+                <div class="Blogs-detail">
+                    <span>25 Dec 2023</span>
+                    <h4>Tips for technical interview</h4>
+                    <p>The impression you make on the interviewer often can outweigh your actual credentials. Your poise, attitude, basic social skills, and ability to communicate are evaluated along with your experience and education.</p>
+                    <hr class="divider">
+                    <a href="#" class="Blogs-more">Read More</a>
+
+                </div>
+            </div>
+            <div class="Blogs-card">
+                <img class="Blogs-image" src="{% static './images/3 Blogs.jpg' %}">
+                <div class="Blogs-detail">
+                    <span>25 Dec 2023</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>Effective time management skills increase your focus and productivity. They also reduce distractions and procrastination. </p>
+                    <hr class="divider">
+                    <a href="#" class="Blogs-more">Read More</a>
+
+                </div>
+            </div>
+    </section>
+    <footer style="background-color:#527853;">
+    </footer>
+
+
+
+</body>
+
+</html>
